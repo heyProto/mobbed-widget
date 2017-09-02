@@ -54,10 +54,10 @@ class Widget extends React.Component {
     }
 
     return(
-      <div className="mobbed-widget banner-div">
+      <div className="banner-div">
         <a className="data-url" target="_blank" href="http://protograph.indianexpress.com/mobbed/index.html">
           <h1 className="mobbed-widget-title">#mobbed</h1>
-          <p className="mobbed-widget-subtitle">What emboldens lynching and mob vigilantism in India?</p>
+          <div className="mobbed-widget-subtitle">What emboldens lynching and mob vigilantism in India?</div>
           <div className="counter-area">
             <div className="number-background">
               <div className="single-background"></div>
@@ -70,14 +70,13 @@ class Widget extends React.Component {
               <span className="animate-number">{number_of_incidents}</span>
             </div>
           </div>
-          <div className="display-text">Instances of lynching were reported <br/>
+          <div className="display-summary">Instances of lynching were reported <br/>
             {start_date === '' || end_date === '' ? '' : `from ${start_date} to ${end_date}` }
           </div>
         </a>
       </div>
     )
   }
-
 }
 
 export default Widget;

@@ -1,23 +1,35 @@
-.mobbed-widget-title, .mobbed-widget-subtitle{
+body{
+  margin: 0px;
+}
+
+.mobbed-widget-title{
   margin-top:0px;
   margin-bottom: 0px;
   color: white;
   font-family: sans-serif;
-  padding: 10px 15px;
+  padding: 10px;
+  font-size: 38px;
+}
+
+.mobbed-widget-subtitle{
+  margin-top:0px;
+  margin-bottom: 0px;
+  color: white;
+  font-family: sans-serif;
+  padding: 0 0 10px 10px;
+  font-size: 14px;
 }
 
 .banner-div{
   background-image: url("http://protograph.indianexpress.com/mobbed/img/banner.jpg");
-  height: 250px;
+  height: 235px;
   width: 100%;
   font-family: sans-serif;
+  max-width: 640px;
 }
 
 .number-background {
   position: absolute;
- /* transform: translate(-50%,0px);
-  left: 50%;
-  width: 180px;*/
 }
 
 .single-background{
@@ -45,11 +57,10 @@
 }
 
 .display-summary{
-  font-size: 18px;
-  line-height: 27px;
-  margin-top: 15px;
-  margin-left:15px;
+  font-size: 14px;
+  line-height: 19px;
   color: white;
+  padding: 10px 15px;
 }
 
 .counter-area{
@@ -63,9 +74,14 @@
   text-decoration: none;
 }
 
-.display-text{
-  font-size: 18px;
-  line-height: 24px;
-  color: white;
-  padding: 10px 15px;
+@media only screen and (max-width: 450px){
+  .banner-div{
+    background-image: url("http://protograph.indianexpress.com/mobbed/img/banner.jpg");
+    height: 250px;
+    width: 100%;
+    font-family: sans-serif;
+    max-width: 320px;
+    margin-left:auto;
+    margin-right: auto;
+  }
 }
