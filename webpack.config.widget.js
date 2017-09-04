@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const minifier = require('minifier');
 const input = './src/css/styles.css';
 const options = {
-  output: "./dist/widget.min.css"
+  output: "./dist/the-lynched-widget.min.css"
 }
 minifier.minify(input, options);
 
@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: __dirname,
     publicPath: '/',
-    filename: './dist/widget.min.js',
+    filename: './dist/the-lynched-widget.min.js',
   },
   plugins: [
     new webpack.DefinePlugin({

@@ -69,7 +69,7 @@ class Widget extends React.Component {
             </div>
           </div>
           <div className="display-summary">Instances of lynching were reported <br/>
-            {start_date === '' || end_date === '' ? '' : `from ${start_date} to ${end_date}` }
+            {start_date === '' || end_date === '' ? '' : `from ${end_date} to ${start_date}` }
           </div>
         </a>
       </div>
