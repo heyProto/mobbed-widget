@@ -8,7 +8,7 @@ minifier.minify(input, options);
 
 module.exports = {
   entry: {
-    app: [ './main.js' ]
+    app: [ './src/js/Widget.js' ]
   },
   output: {
     path: __dirname,
