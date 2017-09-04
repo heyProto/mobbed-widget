@@ -56,8 +56,6 @@ class Widget extends React.Component {
     return(
       <div className="banner-div">
         <a className="data-url" target="_blank" href="http://protograph.indianexpress.com/mobbed/index.html">
-          <h1 className="mobbed-widget-title">#mobbed</h1>
-          <div className="mobbed-widget-subtitle">What emboldens lynching and mob vigilantism in India?</div>
           <div className="counter-area">
             <div className="number-background">
               <div className="single-background"></div>
